@@ -1,0 +1,87 @@
+/* NEXTLAB
+   Phase 1: einfache Grundgestaltung
+   Phase 2: Boxmodell gezielt einsetzen
+*/
+html{
+   background-color: aliceblue;
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+     max-width:600px;                                                
+            margin: 40px auto;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 16px 38px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+}
+
+h1{
+   font-size: 65px;
+   color: navy;
+   text-align: top;
+
+}
+
+
+.img1{
+   width: 600px;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+.hypr{
+   background-color: aliceblue;
+   margin: 25px 0px 30px;
+   padding: 10px;
+   width: auto;
+   border-left: 5px solid navy;
+   border-radius: 10px 10px 10x;
+   font-weight: bold;
+   font-size: 18px;
+   text-decoration: none;
+
+}
+
+a{
+   text-decoration: none;
+   margin-right: 20px;
+}
+
+a:hover{
+   color: #ffa500;
+   text-decoration: solid underline;
+   
+}
+
+.unterbox1{
+   background-color: aliceblue;
+   border-color:  grey solid;
+   border-radius: 15px;
+   
+
+}
+
+
+.sepbox1{
+   border-radius: 15px;
+   margin: 15px 10px 10px;
+   padding: 10px;
+   width: auto;
+   background-color: aliceblue;
+
+}
+
+#smfc{
+   background-color: #ffa500;
+   border-radius: 15px;
+   margin: 15px 10px 10px;
+   padding: 10px;
+   width: auto;
+
+}
+
+.secret {
+   font-size: 2px;
+}

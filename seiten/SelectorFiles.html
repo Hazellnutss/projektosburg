@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/start.css">
+<style>
+    .PHASE{
+        color: red;
+    }
 
+/* Colour tokens — override to re-skin the effect:
+   --ink    main text colour (defaults to currentColor)
+   --ink-2  primary accent   --ink-3  secondary accent */
+:root { --ink: currentColor; --ink-2: #FF4FD8; --ink-3: red; }
+
+/* 10 Cipher — scrambled characters decode into the word, then re-encrypt */
+.fx-decoder {
+  font: 600 28px/1.2 "JetBrains Mono", monospace;
+  letter-spacing: .08em;
+  color: var(--ink-3);
+}
+.fx-decoder::after {
+  content: "▓K#R1&Q";
+  animation: fx-decoder 4s steps(1) infinite;
+}
+@keyframes fx-decoder {
+  0%   { content: "▓K#R1&Q"; color: var(--ink-3); }
+  8%   { content: "D%#OD3▒"; }
+  16%  { content: "DE☰O*ER"; }
+  24%  { content: "PHASE 3"; }
+  32%  { content: "PHAS€%"; }
+  40%, 82% { content: "PHASE 3"; color: var(--ink); }
+  88%  { content: "DHA0*€R"; color: var(--ink-3); }
+  94%  { content: "▒#COD1Q"; }
+}
+</style>
 
 
 
@@ -20,7 +50,9 @@
 <ul>
 <li><a href="rmbk.html">RMBK Gruppe</a></li>
 <li><a href="SelectorVier.html">Viersener Gruppe</a></li>
+<li><a class="fx-decoder" href=""></a></li>
 </ul>
+
 
 </div>
 </body>
